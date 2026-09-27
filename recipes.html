@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Healthy Recipes | Healthy Meals and Recipes</title>
+  <meta name="description" content="Browse easy healthy recipes for breakfast, lunch, dinner and snacks. Filter by category and view ingredients, step-by-step instructions, servings and prep times.">
+  <meta name="theme-color" content="#1f4d2b">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%231f4d2b'/%3E%3Cpath d='M28 72 C28 42 48 26 76 24 C76 52 58 72 28 72 Z' fill='%238cc152'/%3E%3Cpath d='M30 70 L62 38' stroke='%231f4d2b' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- ===== Site header ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-icon" aria-hidden="true">&#127807;</span>
+        <span class="brand-name">Healthy Meals <span class="brand-accent">and</span> Recipes</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+        <span class="nav-toggle-icon" aria-hidden="true">
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </span>
+        <span class="nav-toggle-text">Menu</span>
+      </button>
+
+      <nav class="primary-nav" id="primary-navigation" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link is-active" href="recipes.html" aria-current="page">Recipes</a></li>
+          <li><a class="nav-link" href="tips.html">Healthy Eating Tips</a></li>
+          <li><a class="nav-link" href="about.html">About</a></li>
+          <li><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" tabindex="-1">
+
+    <!-- ===== Page banner ===== -->
+    <section class="page-banner" aria-labelledby="page-heading">
+      <div class="container">
+        <span class="section-label">Recipe collection</span>
+        <h1 id="page-heading">Healthy Recipes</h1>
+        <p class="lead">Simple, affordable meals for every part of the day. Choose a category to narrow the list, then select View Recipe for ingredients, servings and step-by-step instructions.</p>
+      </div>
+    </section>
+
+    <!-- ===== Filters and recipe grid ===== -->
+    <section class="section section-cream" aria-labelledby="collection-heading">
+      <div class="container">
+        <h2 id="collection-heading" class="visually-hidden">Recipe list</h2>
+
+        <div class="filter-bar" role="group" aria-label="Filter recipes by category">
+          <button class="filter-btn" type="button" data-filter="all" aria-pressed="true">All Recipes</button>
+          <button class="filter-btn" type="button" data-filter="breakfast" aria-pressed="false">Breakfast</button>
+          <button class="filter-btn" type="button" data-filter="lunch" aria-pressed="false">Lunch</button>
+          <button class="filter-btn" type="button" data-filter="dinner" aria-pressed="false">Dinner</button>
+          <button class="filter-btn" type="button" data-filter="snacks" aria-pressed="false">Snacks</button>
+        </div>
+
+        <p class="filter-status" id="filter-status" role="status" aria-live="polite">Showing 8 recipes.</p>
+
+        <div class="recipe-grid" data-filterable>
+          <article class="recipe-card" id="avocado-egg-toast" data-category="breakfast">
+            <div class="recipe-card-image">
+              <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=800&q=80" alt="Slices of toast topped with mashed avocado and eggs on a plate" width="800" height="600" loading="lazy" decoding="async">
+            </div>
+            <div class="recipe-card-body">
+              <ul class="recipe-card-meta">
+                <li><span class="visually-hidden">Category: </span><span class="badge">Breakfast</span></li>
+                <li class="prep-time"><span aria-hidden="true">&#9201;</span> Prep time: 10 min</li>
+              </ul>
+              <h3>Avocado and Egg Toast</h3>
+              <p class="recipe-card-description">Creamy mashed avocado on wholegrain toast with a soft egg for a filling, protein-rich start to the day.</p>
+              <p class="recipe-card-ingredients"><strong>Key ingredients:</strong> Wholegrain bread, avocado, eggs, cherry tomatoes, lemon.</p>
+              <button class="btn" type="button" data-recipe-id="avocado-egg-toast" aria-haspopup="dialog">View Recipe<span class="visually-hidden">: Avocado and Egg Toast</span></button>
+            </div>
+          </article>
+
+          <article class="recipe-card" id="berry-oat-smoothie" data-category="breakfast">
+            <div class="recipe-card-image">
+              <img src="https://images.unsplash.com/photo-1553530666-ba11a7da3888?auto=format&fit=crop&w=800&q=80" alt="Glasses of pink berry smoothie with fresh fruit" width="800" height="600" loading="lazy" decoding="async">
+            </div>
+            <div class="recipe-card-body">
+              <ul class="recipe-card-meta">
+                <li><span class="visually-hidden">Category: </span><span class="badge">Breakfast</span></li>
+                <li class="prep-time"><span aria-hidden="true">&#9201;</span> Prep time: 5 min</li>
+              </ul>
+              <h3>Berry Oat Smoothie</h3>
+              <p class="recipe-card-description">A thick, naturally sweet smoothie with berries, banana and oats. Perfect for busy mornings on the go.</p>
+              <p class="recipe-card-ingredients"><strong>Key ingredients:</strong> Frozen berries, rolled oats, banana, milk, Greek yogurt.</p>
+              <button class="btn" type="button" data-recipe-id="berry-oat-smoothie" aria-haspopup="dialog">View Recipe<span class="visually-hidden">: Berry Oat Smoothie</span></button>
+            </div>
+          </article>
+
+          <article class="recipe-card" id="greek-yogurt-parfait" data-category="breakfast">
+            <div class="recipe-card-image">
+              <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=800&q=80" alt="Glass of layered yogurt with fresh berries and granola" width="800" height="600" loading="lazy" decoding="async">
+            </div>
+            <div class="recipe-card-body">
+              <ul class="recipe-card-meta">
+                <li><span class="visually-hidden">Category: </span><span class="badge">Breakfast</span></li>
+                <li class="prep-time"><span aria-hidden="true">&#9201;</span> Prep time: 5 min</li>
+              </ul>
+              <h3>Greek Yogurt Parfait</h3>
+              <p class="recipe-card-description">Layers of creamy yogurt, fresh berries and crunchy granola. High in protein and ready in minutes.</p>
+              <p class="recipe-card-ingredients"><strong>Key ingredients:</strong> Greek yogurt, mixed berries, granola, nuts or seeds.</p>
+              <button class="btn" type="button" data-recipe-id="greek-yogurt-parfait" aria-haspopup="dialog">View Recipe<span class="visually-hidden">: Greek Yogurt Parfait</span></button>
+            </div>
+          </article>
+
+          <article class="recipe-card" id="chicken-quinoa-bowl" data-category="lunch">
+            <div class="recipe-card-image">
+              <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80" alt="Colourful bowl of grains, fresh vegetables and greens" width="800" height="600" loading="lazy" decoding="async">
+            </div>
+            <div class="recipe-card-body">
+              <ul class="recipe-card-meta">
+                <li><span class="visually-hidden">Category: </span><span class="badge">Lunch</span></li>
+                <li class="prep-time"><span aria-hidden="true">&#9201;</span> Prep time: 10 min</li>
+              </ul>
+              <h3>Chicken Quinoa Bowl</h3>
+              <p class="recipe-card-description">Seasoned chicken, fluffy quinoa and crisp vegetables with a light lemon yogurt dressing.</p>
+              <p class="recipe-card-ingredients"><strong>Key ingredients:</strong> Chicken breast, quinoa, spinach, cucumber, tomatoes, avocado.</p>
+              <button class="btn" type="button" data-recipe-id="chicken-quinoa-bowl" aria-haspopup="dialog">View Recipe<span class="visually-hidden">: Chicken Quinoa Bowl</span></button>
+            </div>
+          </article>
+
+          <article class="recipe-card" id="tuna-bean-salad" data-category="lunch">
+            <div class="recipe-card-image">
+              <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80" alt="Fresh salad bowl with vegetables, greens and beans" width="800" height="600" loading="lazy" decoding="async">
+            </div>
+            <div class="recipe-card-body">
+              <ul class="recipe-card-meta">
+                <li><span class="visually-hidden">Category: </span><span class="badge">Lunch</span></li>
+                <li class="prep-time"><span aria-hidden="true">&#9201;</span> Prep time: 10 min</li>
+              </ul>
+              <h3>Tuna and Bean Salad</h3>
+              <p class="recipe-card-description">A budget-friendly, no-cook salad made from store-cupboard tuna and beans with a zesty dressing.</p>
+              <p class="recipe-card-ingredients"><strong>Key ingredients:</strong> Canned tuna, cannellini beans, red onion, tomatoes, parsley.</p>
+              <button class="btn" type="button" data-recipe-id="tuna-bean-salad" aria-haspopup="dialog">View Recipe<span class="visually-hidden">: Tuna and Bean Salad</span></button>
+            </div>
+          </article>
+
+          <article class="recipe-card" id="baked-salmon-vegetables" data-category="dinner">
+            <div class="recipe-card-image">
+              <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=800&q=80" alt="Baked salmon fillet served with vegetables and lemon" width="800" height="600" loading="lazy" decoding="async">
+            </div>
+            <div class="recipe-card-body">
+              <ul class="recipe-card-meta">
+                <li><span class="visually-hidden">Category: </span><span class="badge">Dinner</span></li>
+                <li class="prep-time"><span aria-hidden="true">&#9201;</span> Prep time: 10 min</li>
+              </ul>
+              <h3>Baked Salmon with Vegetables</h3>
+              <p class="recipe-card-description">Lemon and herb salmon baked on one tray with sweet potato, broccoli and pepper.</p>
+              <p class="recipe-card-ingredients"><strong>Key ingredients:</strong> Salmon fillets, sweet potato, broccoli, red pepper, lemon.</p>
+              <button class="btn" type="button" data-recipe-id="baked-salmon-vegetables" aria-haspopup="dialog">View Recipe<span class="visually-hidden">: Baked Salmon with Vegetables</span></button>
+            </div>
+          </article>
+
+          <article class="recipe-card" id="vegetable-stir-fry" data-category="dinner">
+            <div class="recipe-card-image">
+              <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=800&q=80" alt="Bowl of rice mixed with colourful stir-fried vegetables" width="800" height="600" loading="lazy" decoding="async">
+            </div>
+            <div class="recipe-card-body">
+              <ul class="recipe-card-meta">
+                <li><span class="visually-hidden">Category: </span><span class="badge">Dinner</span></li>
+                <li class="prep-time"><span aria-hidden="true">&#9201;</span> Prep time: 15 min</li>
+              </ul>
+              <h3>Vegetable Stir Fry</h3>
+              <p class="recipe-card-description">Crisp, colourful vegetables in a quick garlic, ginger and soy sauce, served over brown rice.</p>
+              <p class="recipe-card-ingredients"><strong>Key ingredients:</strong> Broccoli, carrot, pepper, snap peas, ginger, brown rice.</p>
+              <button class="btn" type="button" data-recipe-id="vegetable-stir-fry" aria-haspopup="dialog">View Recipe<span class="visually-hidden">: Vegetable Stir Fry</span></button>
+            </div>
+          </article>
+
+          <article class="recipe-card" id="apple-peanut-butter-bites" data-category="snacks">
+            <div class="recipe-card-image">
+              <img src="https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?auto=format&fit=crop&w=800&q=80" alt="Fresh red apples ready to be sliced for a snack" width="800" height="600" loading="lazy" decoding="async">
+            </div>
+            <div class="recipe-card-body">
+              <ul class="recipe-card-meta">
+                <li><span class="visually-hidden">Category: </span><span class="badge">Snacks</span></li>
+                <li class="prep-time"><span aria-hidden="true">&#9201;</span> Prep time: 10 min</li>
+              </ul>
+              <h3>Apple and Peanut Butter Bites</h3>
+              <p class="recipe-card-description">Crunchy apple rounds topped with peanut butter, oats and raisins. Sweet, satisfying and simple.</p>
+              <p class="recipe-card-ingredients"><strong>Key ingredients:</strong> Apples, natural peanut butter, oats, raisins, chia seeds.</p>
+              <button class="btn" type="button" data-recipe-id="apple-peanut-butter-bites" aria-haspopup="dialog">View Recipe<span class="visually-hidden">: Apple and Peanut Butter Bites</span></button>
+            </div>
+          </article>
+        </div>
+
+        <div class="no-results" id="no-results" hidden>
+          <h3>No recipes found</h3>
+          <p>There are no recipes in this category yet. Try another category or choose All Recipes.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Call to action ===== -->
+    <section class="section section-sage" aria-labelledby="recipes-cta-heading">
+      <div class="container">
+        <div class="cta-band">
+          <h2 id="recipes-cta-heading">Want to make these meals part of your routine?</h2>
+          <p>Learn how to build balanced plates, control portions and plan a week of meals in less than an hour.</p>
+          <div class="btn-group btn-group-center">
+            <a class="btn" href="tips.html">Read Healthy Eating Tips</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== Recipe details modal (filled in by js/script.js) ===== -->
+  <dialog class="recipe-modal" id="recipe-modal" aria-labelledby="modal-title">
+    <button class="modal-close" type="button" aria-label="Close recipe details">&times;</button>
+    <img class="modal-image" id="modal-image" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" width="1200" height="600">
+    <div class="modal-body">
+      <span class="badge" id="modal-category">Recipe</span>
+      <h2 id="modal-title">Recipe details</h2>
+      <p class="modal-description" id="modal-description"></p>
+
+      <ul class="modal-facts">
+        <li><span>Prep time</span> <strong id="modal-prep"></strong></li>
+        <li><span>Cook time</span> <strong id="modal-cook"></strong></li>
+        <li><span>Servings</span> <strong id="modal-servings"></strong></li>
+        <li><span>Difficulty</span> <strong>Easy</strong></li>
+      </ul>
+
+      <div class="modal-columns">
+        <section aria-labelledby="modal-ingredients-heading">
+          <h3 id="modal-ingredients-heading">Ingredients</h3>
+          <ul class="ingredient-list" id="modal-ingredients"></ul>
+        </section>
+
+        <section aria-labelledby="modal-method-heading">
+          <h3 id="modal-method-heading">Instructions</h3>
+          <ol class="method-list" id="modal-steps"></ol>
+        </section>
+      </div>
+
+      <p class="modal-tip"><strong>Healthy tip:</strong> <span id="modal-tip"></span></p>
+    </div>
+  </dialog>
+
+  <!-- ===== Site footer ===== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-about">
+        <p class="footer-brand">
+          <span class="brand-icon" aria-hidden="true">&#127807;</span>
+          Healthy Meals and Recipes
+        </p>
+        <p>Simple, affordable and nutritious recipes for students, busy adults, families and beginner cooks.</p>
+      </div>
+
+      <nav aria-label="Footer navigation">
+        <h2 class="footer-heading">Explore</h2>
+        <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="recipes.html" aria-current="page">Recipes</a></li>
+            <li><a href="tips.html">Healthy Eating Tips</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <h2 class="footer-heading">Eat well, live well</h2>
+        <p class="footer-statement">Healthy living starts with small, steady choices: more colour on your plate, water by your side and meals made with care.</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; <span id="current-year"></span> Healthy Meals and Recipes. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

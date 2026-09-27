@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us | Healthy Meals and Recipes</title>
+  <meta name="description" content="Get in touch with Healthy Meals and Recipes. Share your recipe ideas, feedback and questions about simple, healthy and affordable cooking.">
+  <meta name="theme-color" content="#1f4d2b">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%231f4d2b'/%3E%3Cpath d='M28 72 C28 42 48 26 76 24 C76 52 58 72 28 72 Z' fill='%238cc152'/%3E%3Cpath d='M30 70 L62 38' stroke='%231f4d2b' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- ===== Site header ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-icon" aria-hidden="true">&#127807;</span>
+        <span class="brand-name">Healthy Meals <span class="brand-accent">and</span> Recipes</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+        <span class="nav-toggle-icon" aria-hidden="true">
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </span>
+        <span class="nav-toggle-text">Menu</span>
+      </button>
+
+      <nav class="primary-nav" id="primary-navigation" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="recipes.html">Recipes</a></li>
+          <li><a class="nav-link" href="tips.html">Healthy Eating Tips</a></li>
+          <li><a class="nav-link" href="about.html">About</a></li>
+          <li><a class="nav-link is-active" href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" tabindex="-1">
+
+    <!-- ===== Page banner ===== -->
+    <section class="page-banner" aria-labelledby="page-heading">
+      <div class="container">
+        <span class="section-label">Contact</span>
+        <h1 id="page-heading">Get in Touch</h1>
+        <p class="lead">Have a healthy recipe you love, an idea for a new meal or feedback about the website? Send us a message using the form below.</p>
+      </div>
+    </section>
+
+    <!-- ===== Contact form and image ===== -->
+    <section class="section section-cream" aria-labelledby="form-heading">
+      <div class="container contact-layout">
+        <div class="form-card">
+          <h2 id="form-heading">Send us a message</h2>
+          <p class="form-intro">All fields are required and marked with <span class="required-marker" aria-hidden="true">*</span><span class="visually-hidden">an asterisk</span>.</p>
+
+          <div class="form-message" id="form-message" role="status" aria-live="polite" tabindex="-1"></div>
+
+          <form id="contact-form" action="#" method="get" novalidate>
+            <div class="form-group">
+              <label for="full-name">Full Name <span class="required-marker" aria-hidden="true">*</span></label>
+              <input class="form-control" type="text" id="full-name" name="fullName" autocomplete="name" required aria-describedby="full-name-error">
+              <p class="field-error" id="full-name-error"></p>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address <span class="required-marker" aria-hidden="true">*</span></label>
+              <input class="form-control" type="email" id="email" name="email" autocomplete="email" inputmode="email" required aria-describedby="email-hint email-error">
+              <p class="field-hint" id="email-hint">For example: name@example.com</p>
+              <p class="field-error" id="email-error"></p>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject <span class="required-marker" aria-hidden="true">*</span></label>
+              <input class="form-control" type="text" id="subject" name="subject" required aria-describedby="subject-error">
+              <p class="field-error" id="subject-error"></p>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message <span class="required-marker" aria-hidden="true">*</span></label>
+              <textarea class="form-control" id="message" name="message" rows="6" required aria-describedby="message-error"></textarea>
+              <p class="field-error" id="message-error"></p>
+            </div>
+
+            <button class="btn btn-block" type="submit">Send Message</button>
+          </form>
+
+          <p class="demo-note"><span aria-hidden="true">&#8505;&#65039;</span> <span><strong>Please note:</strong> this is a demonstration contact form. Your details are checked in your browser only and are not sent or stored anywhere.</span></p>
+        </div>
+
+        <aside class="contact-aside" aria-label="More about getting in touch">
+          <img src="https://images.unsplash.com/photo-1494390248081-4e521a5940db?auto=format&fit=crop&w=900&q=80" alt="Colourful healthy dishes and fresh ingredients arranged on a table" width="900" height="1125" loading="lazy" decoding="async">
+          <div class="contact-info">
+            <h2>We love hearing about</h2>
+            <ul class="check-list">
+              <li>Your favourite healthy recipes</li>
+              <li>Budget-friendly cooking ideas</li>
+              <li>Meals you would like us to add</li>
+              <li>Feedback on our tips and website</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== Site footer ===== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-about">
+        <p class="footer-brand">
+          <span class="brand-icon" aria-hidden="true">&#127807;</span>
+          Healthy Meals and Recipes
+        </p>
+        <p>Simple, affordable and nutritious recipes for students, busy adults, families and beginner cooks.</p>
+      </div>
+
+      <nav aria-label="Footer navigation">
+        <h2 class="footer-heading">Explore</h2>
+        <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="tips.html">Healthy Eating Tips</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <h2 class="footer-heading">Eat well, live well</h2>
+        <p class="footer-statement">Healthy living starts with small, steady choices: more colour on your plate, water by your side and meals made with care.</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; <span id="current-year"></span> Healthy Meals and Recipes. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
